@@ -4,7 +4,7 @@ from tkinter import messagebox
 from pynput.keyboard import Key, Controller
 import random as ran
 win = Tk()
-win.geometry("1000x1000")
+win.geometry("{}x{}".format(win.winfo_screenwidth(), win.winfo_screenheight()))
 label=Label(win, text="", font=("Courier 22 bold"))
 label.pack()
 frame1 = Frame(win)
